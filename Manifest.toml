@@ -2,7 +2,7 @@
 
 julia_version = "1.10.2"
 manifest_format = "2.0"
-project_hash = "a2c2b5a2d47a6bdbb620bd1960d374934f948137"
+project_hash = "3b1896b9dd84ef3a07264af03add04f466f66131"
 
 [[deps.AbstractFFTs]]
 deps = ["LinearAlgebra"]
@@ -518,6 +518,12 @@ deps = ["Artifacts", "JLLWrappers", "Libdl"]
 git-tree-sha1 = "1ed150b39aebcc805c26b93a8d0122c940f64ce2"
 uuid = "559328eb-81f9-559d-9380-de523a88c83c"
 version = "1.0.14+0"
+
+[[deps.Functors]]
+deps = ["Compat", "ConstructionBase", "LinearAlgebra", "Random"]
+git-tree-sha1 = "15e5397dd1cea034c7c772d9748cdee461fb5496"
+uuid = "d9f16b24-f501-4c13-a1f2-28368ffc5196"
+version = "0.5.1"
 
 [[deps.Future]]
 deps = ["Random"]
@@ -1177,6 +1183,18 @@ deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "Pk
 git-tree-sha1 = "13652491f6856acfd2db29360e1bbcd4565d04f1"
 uuid = "efe28fd5-8261-553b-a9e1-b2916fc3738e"
 version = "0.5.5+0"
+
+[[deps.Optimisers]]
+deps = ["ChainRulesCore", "Functors", "LinearAlgebra", "Random", "Statistics"]
+git-tree-sha1 = "09000e0bdec3aed6e3dff553c9fb010d27de56ee"
+uuid = "3bd65402-5787-11e9-1adc-39752487f4e2"
+version = "0.4.1"
+
+    [deps.Optimisers.extensions]
+    OptimisersEnzymeCoreExt = "EnzymeCore"
+
+    [deps.Optimisers.weakdeps]
+    EnzymeCore = "f151be2c-9106-41f4-ab19-57ee4f262869"
 
 [[deps.Opus_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
